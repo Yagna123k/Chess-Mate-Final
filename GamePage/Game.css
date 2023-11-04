@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@900&family=Roboto:wght@300;400;700&family=Work+Sans&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-color: #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    padding: 25px 100px;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    width: 50px;
+    margin-right: 25px;
+}
+
+.left p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #7945E3;
+    font-weight: 600;
+}
+
+.restart{
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #7945E3;
+    box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+
+.chess{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    max-width: 580px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.board{
+    display: grid;
+    place-items: center;
+    max-width: 550px;
+    border: 2px solid #7F4EE2;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.board ul{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.board .divv{
+    display: flex;
+}
+
+.board li{
+    list-style: none;
+    display: grid;
+    font-size: 0;
+    place-items: center;
+}
+
+.box{
+    margin: .5px;
+    height: 65px;    
+    width: 65px;
+    background-color: #7F4EE2;
+}
+
+.allimg{
+    width: 40px;
+    position: relative;
+    bottom:5px;
+}
+
+#tog{
+    margin-top: 40px;
+    color: #7945E3;
+}
+
+@media (max-width:650px){
+    .box{
+        width: 11vw;
+        height: 11vw;
+    }
+    .allimg{
+        width: 7vw;
+    }
+}
+

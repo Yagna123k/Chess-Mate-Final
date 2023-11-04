@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@900&family=Roboto:wght@300;400;700&family=Work+Sans&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-color: #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    padding: 25px 100px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    width: 50px;
+    margin-right: 25px;
+}
+
+.left p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #7945E3;
+    font-weight: 600;
+}

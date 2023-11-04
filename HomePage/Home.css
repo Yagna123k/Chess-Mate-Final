@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Titlefont;
+    src: url(Afogand.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@900&family=Roboto:wght@300;400;700&family=Work+Sans&display=swap');
+
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background: url("./../assets/HomeBackground.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.Home{
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+nav{
+    padding: 25px 100px;
+    justify-content: space-between;
+}
+
+#navpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.gamename{
+    font-family: Titlefont;
+    padding-left: 25px;
+    font-size: 40px;
+}
+
+#navpart .creater a{
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: 300;
+    padding-right: 50px;
+}
+
+.navplaybtn .playnav{
+    width: 100px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.textcontent{
+    height: 50%;
+    max-width: 670px;
+    padding: 100px 0 50px 150px;
+}
+
+.textcontent .head1{
+    font-size: 55px;
+    font-weight: 300;
+}
+.textcontent .head2{
+    font-size: 55px;
+    font-weight: 300;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+.textcontent .nextlevel{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.textcontent .desc{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    padding-left: 25px;
+}
+
+.playbtn{
+    width: 100px;
+    height: 50px;
+    color: #7945E3;
+    box-shadow: 0px 4px 4px 0px #7945E3;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 16px;
+    margin: 25px;   
+    border: none;
+}
