@@ -8,12 +8,14 @@
 }
 
 body{
-    background-color: #F2F2F2;
+    background:url('./../assets/Instructionsbackground.png');
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    color: white;
 }
 
 nav{
@@ -33,11 +35,21 @@ nav div{
     margin-right: 25px;
 }
 
+.left img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .left p{
     margin-top: 15px;
     font-size: 20px;
-    color: #7945E3;
+    color: #ffffff;
     font-weight: 600;
+}
+
+.left p:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .restart{
@@ -45,17 +57,23 @@ nav div{
     width: 100px;
     height: 35px;
     border-radius: 10px;
-    background-color: #7945E3;
+    background-color: #ffffff;
     box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
-    color: white;
+    color: #7945E3;
     font-weight: 600;
     font-size: 16px;
     border: none;
+    cursor: pointer;
+}
+
+.restart:hover{
+    transform: scale(1.1);
 }
 
 .chess{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -73,7 +91,7 @@ nav div{
     display: grid;
     place-items: center;
     max-width: 550px;
-    border: 2px solid #7F4EE2;
+    border: 3px solid #7F4EE2;
     border-radius: 5px;
     padding: 2px;
 }
@@ -98,18 +116,103 @@ nav div{
     margin: .5px;
     height: 65px;    
     width: 65px;
-    background-color: #7F4EE2;
 }
 
 .allimg{
     width: 40px;
     position: relative;
-    bottom:5px;
+}
+
+.allimg:hover{
+    transform: scale(1.1);
 }
 
 #tog{
-    margin-top: 40px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px 10px;
+    max-width: 500px;
+}
+
+.footer span{
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+.gameover{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0,0.8);
+    display: none;
+}
+
+.gameover .content{
+    background-color: white;
+    width: 35%;
+    height: 35%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.windiv h1{
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 25px;
     color: #7945E3;
+}
+
+.windiv h2{
+    color: #855ECC;
+    font-weight: 900;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-bottom: 5%;
+}
+
+.options button{
+    background-color: #7945E3;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.options button:hover{
+    transform: scale(1.1);
+}
+
+#homebtn{
+    background-color: #BF93EF;
+}
+
+#replay{
+    background-color: #7553E0;
 }
 
 @media (max-width:650px){

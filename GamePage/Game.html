@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess Game</title>
     <link rel="stylesheet" href="Game.css">
+    <link rel="shortcut icon" href="./../assets/favlogo.png" type="image/x-icon">
 </head>
 <body>
+
+    <section class="gameover" id="gameover">
+        <div class="content">
+            <div class="windiv">
+                <h1 id="winner"></h1>
+                <h2 class="want">Want to replay!</h2>
+            </div>
+            <div class="options">
+                <button id='homebtn'>Home</button>
+                <button id="replay">Replay</button>
+            </div>
+        </div>
+    </section>
     <nav>
         <div class="left">
-            <img src="./../assets/Home icon.png" alt="Home">
-            <p>Instructions</p>
+            <img id="home" src="./../assets/Homeiconwhite.png" alt="Home">
+            <p id="inst">Instructions</p>
         </div>
         <div class="right">
-            <button class="restart">Restart</button>
+            <button id="restart" class="restart">Restart</button>
         </div>
     </nav>
 
     <section class="chess">
+        <h2 id="tog">Player 1 Have to Start the Game with Whites</h2>
         <section class="container">
             <section class="board">
                 <div class="divv" id="row8">
@@ -104,9 +119,12 @@
         
             </section>
         </section>
+        <div class="footer">
+            <p>Moves: <span id="move"></span></p>
+            <p>Time: <span id="time"></span> left</p>
+        </div>
     </section>
 
-    <h2 id="tog">Player 1's Turn</h2>
     <script src="Game.js"></script>
 </body>
 </html>

@@ -51,13 +51,61 @@ nav{
     font-family: Titlefont;
     padding-left: 25px;
     font-size: 40px;
+    cursor: pointer;
 }
 
 #navpart .creater a{
-    font-size: 26px;
+    font-size: 22px;
     text-decoration: none;
     font-weight: 300;
-    padding-right: 50px;
+    text-transform: uppercase;
+}
+#navpart .creater a:hover{
+    transform: scale(1.05);
+}
+.creater{
+    position: relative;
+    width: 120px;
+    height: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;    
+}
+
+.creater::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 140px;
+    /* background: linear-gradient(#ffffff, #6A3EEB); */
+    background:#ffffff;
+    animation: glow 4s linear infinite;
+}
+
+.creater::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient(to right,#8F71F3, #896EF1);;
+    border-radius: 5px;
+}
+@keyframes glow {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.creater a{
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
 }
 
 .navplaybtn .playnav{
@@ -68,12 +116,13 @@ nav{
     border: 2px solid white;
     background-color: transparent;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .textcontent{
     height: 50%;
     max-width: 670px;
-    padding: 100px 0 50px 150px;
+    padding: 150px 0 50px 150px;
 }
 
 .textcontent .head1{
@@ -84,7 +133,7 @@ nav{
     font-size: 55px;
     font-weight: 300;
     padding-left: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 .textcontent .nextlevel{
     font-size: 55px;
@@ -110,4 +159,55 @@ nav{
     font-size: 16px;
     margin: 25px;   
     border: none;
+    cursor: pointer;
 }
+
+
+.nextlevel{
+    position: relative;
+
+    color: #A88CFD;
+    -webkit-text-stroke: 0.1vw white;
+}
+
+.nextlevel::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw #A88CFD;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+
+.playbtn:hover{
+    color: #ffffff;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.navplaybtn .playnav:hover{
+    color: #7945E3;
+    box-shadow: 0px 4px 4px 0px #7945E3;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    transition: 0.2s;
+}
+
