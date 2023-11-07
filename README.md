@@ -3,6 +3,9 @@ Chess Mate: Taking the Game to the Next Level
 
 Welcome to Chess Mate, the online chess platform that will take your chess experience to the next level. Get ready to dive into our captivating  world of strategy, skill, and excitement.
 
+# play Now 👇
+https://yagna123k.github.io/Chess-Mate-Final/HomePage/Home.html
+
 # Game Idea
 
 Chess Mate is an innovative chess platform.
