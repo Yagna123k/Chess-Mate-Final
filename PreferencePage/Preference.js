@@ -1,6 +1,7 @@
 var home = document.getElementById('home')
 var inst = document.getElementById('inst')
 
+
 home.addEventListener('click', ()=>{
     window.location.href = './../HomePage/Home.html'
 })
@@ -33,3 +34,9 @@ function gettime(){
 }
 var time = document.getElementById('time').value
 localStorage.setItem('time', time)
+
+function playsound(){
+    let click = new Audio('./../assets/clicksound.wav')
+    click.play()
+}
+

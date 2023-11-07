@@ -2,15 +2,19 @@ var home = document.getElementById('home')
 var inst = document.getElementById('inst')
 var restart = document.getElementById('restart')
 
+
 home.addEventListener('click', ()=>{
+    clicksound()
     window.location.href = './../HomePage/Home.html'
 })
 
 inst.addEventListener('click', ()=>{
+    clicksound()
     window.location.href = './../InstructionsPage/Instructions.html'
 })
 
 restart.addEventListener('click', ()=>{
+    clicksound()
     var Time = localStorage.getItem('time')
     window.location.href = './Game.html'
 })
@@ -19,10 +23,12 @@ var homebtn = document.getElementById('homebtn')
 var replay = document.getElementById('replay')
 
 homebtn.addEventListener('click', ()=>{
+    clicksound()
     window.location.href = './../HomePage/Home.html'
 })
 
 replay.addEventListener('click', ()=>{
+    clicksound()
     var Time = localStorage.getItem('time')
     window.location.href = './Game.html'
 })
@@ -41,6 +47,7 @@ var p2nick = localStorage.getItem('p2nick')
 
 
 function gameover(){
+    bgm.pause()
     var gover = document.getElementById('gameover')
     console.log(gover)
     gover.style.display = 'flex'
@@ -142,7 +149,7 @@ function reddish() {
 tog = 1
 whiteCastleChance=true
 blackCastleChance=true
-
+var container = document.getElementById('container')
 document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
@@ -151,12 +158,16 @@ document.querySelectorAll('.box').forEach(item => {
         if (item.style.backgroundColor == darkb && item.innerText.length == 0) {
             tog = tog + 1
             moves += 1
+            movesound()
         }
         else if (item.style.backgroundColor == 'aqua' && item.innerText.length == 0) {
             tog = tog + 1
             moves += 1
+            movesound()
         }
         else if (item.style.backgroundColor == lightr && item.innerText.length !== 0) {
+
+            killsound()
 
             document.querySelectorAll('.box').forEach(i => {
                 if (i.style.backgroundColor == lightb) {
@@ -565,6 +576,8 @@ document.querySelectorAll('.box').forEach(item => {
 
         if (item.style.backgroundColor == lightb) {
             
+            clicksound()
+
             item.style.border = '2px solid #7F4EE2'
             blueId = item.id
             blueText = item.innerText
@@ -581,16 +594,14 @@ document.querySelectorAll('.box').forEach(item => {
                     aup = eval(arr.join(''))
                     a = aside + aup
 
-                    if (item2.style.backgroundColor == darkb && item2.innerText.length == 0) {
-
-                        if (blueText == `Wpawn` && aup == 800) {
-                            document.getElementById(`b${a}`).innerText = 'Wqueen'
-                            document.getElementById(blueId).innerText = ''
+                    if (item2.style.backgroundColor == darkb || item2.style.backgroundColor == lightr) {
+                        if (blueText == 'Wpawn' && aup == 800) {
+                            item2.innerText = 'Wqueen'
                             colorBoxes()
                             insertimgs()
                             removebdr()
                         }
-                        else if (blueText == `Bpawn` && aup == 100) {
+                        else if (blueText == 'Bpawn' && aup == 100) {
                             document.getElementById(`b${a}`).innerText = 'Bqueen'
                             document.getElementById(blueId).innerText = ''
                             colorBoxes()
@@ -689,3 +700,23 @@ interval = setInterval(()=>{
     }
 },60000)
 
+let bgm = new Audio('./../assets/backgroundmusic.mp3')
+
+bgm.play()
+bgm.loop = true
+
+function clicksound(){
+    let music = new Audio('./../assets/clicksound.wav')
+    music.pause()
+    music.play()
+}
+function killsound(){
+    let music = new Audio('./../assets/killsound.wav')
+    music.pause()
+    music.play()
+}
+function movesound(){
+    let music = new Audio('./../assets/movesound.wav')
+    music.pause()
+    music.play()
+}

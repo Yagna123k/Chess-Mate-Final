@@ -14,12 +14,15 @@ body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    height: 5%;
+    height: 10%;
+    width: 100%;
     padding: 25px 100px;
 }
 .left{
@@ -101,16 +104,20 @@ nav{
 }
 
 .next{
-    width: 75px;
-    height: 35px;
-    color: #ffffff;
+    width: 100px;
+    height: 50px;
+    color: white;
     border-radius: 50px;
     background-color: #7945E3;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    margin:  10px 25px;   
     border: none;
     cursor: pointer;
-    margin-top: 3%;
+}
+
+.next:hover{
+    transform: scale(1.1);
 }
 
 .ctime select{
@@ -123,4 +130,50 @@ nav{
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
+}
+
+@media screen and (max-width:480px){
+
+    .main{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .content p{
+        font-size: 26px;
+    }
+    
+    .image img{
+        display: none;
+    }
+    #p1name, #p2name{
+        width: 50%;
+        font-size: 16px;
+    }
+    #p1nick, #p2nick{
+        width: 40%;
+        font-size: 16px;
+    }
+    .pd{
+        margin: 3%;
+    }
+
+    .ctime select{
+        width: 90px;
+        margin: 25px auto;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 13%;
+    }
 }

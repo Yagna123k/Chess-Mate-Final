@@ -33,7 +33,9 @@ body{
 }
 
 nav{
-    padding: 25px 100px;
+    width: 100%;
+    height: 13%;
+    padding: 1.5% 6.5%;
     justify-content: space-between;
 }
 
@@ -120,29 +122,29 @@ nav{
 }
 
 .textcontent{
-    height: 50%;
-    max-width: 670px;
-    padding: 150px 0 50px 150px;
+    height: 70%;
+    max-width: 44%;
+    padding: 8% 0 6% 8%;
 }
 
 .textcontent .head1{
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 300;
 }
 .textcontent .head2{
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 300;
     padding-left: 25px;
     padding-bottom: 30px;
 }
 .textcontent .nextlevel{
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 600;
 }
 
 .textcontent .desc{
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 135%;
@@ -165,7 +167,6 @@ nav{
 
 .nextlevel{
     position: relative;
-
     color: #A88CFD;
     -webkit-text-stroke: 0.1vw white;
 }
@@ -211,3 +212,75 @@ nav{
     transition: 0.2s;
 }
 
+
+@media screen and (max-width: 1200px){
+
+    .textcontent{
+        margin-top: 10%;
+    }
+    .textcontent .head1, .textcontent .head2, .textcontent .nextlevel{
+        font-size: 2rem;
+    }
+    .textcontent .desc{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:  480px){
+    
+    body{
+        background: #7945E3;
+    }
+
+    .logo img{
+        width: 35px;
+    }
+    
+    nav{
+        padding: 15px;
+    }
+
+    .gamename{
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    .creater{
+        margin: 0;
+    }
+    .navplaybtn .playnav{
+        display: none;
+    }
+
+    .textcontent{
+        max-width: 100vw;
+        height: 100%;
+        margin: auto;
+        margin-top: 20%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .textcontent .head1, .textcontent .head2, .textcontent .nextlevel{
+        font-size: 40px;
+    }
+    .textcontent .head2{
+        padding-left: 10px;
+    }
+    .textcontent .desc{
+        padding: 10px;
+        font-size: 1.2rem
+    }
+    .playbtn{
+        margin: 50px 100px;
+    }
+    .nextlevel{
+        color: #7945E3;
+    }
+    .nextlevel::before{
+        -webkit-text-stroke: 0vw #7945E3;
+    }
+    .creater::after{
+        background: #7945E3;
+    }
+}

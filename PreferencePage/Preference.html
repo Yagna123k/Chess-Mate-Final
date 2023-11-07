@@ -7,24 +7,24 @@
         <link rel="stylesheet" href="Preference.css">
         <link rel="shortcut icon" href="./../assets/favlogo.png" type="image/x-icon">
     </head>
-    <body>
+    <body onclick="playsound()">
         <nav>
             <div class="left">
-                <img id="home" src="./../assets/Home icon.png" alt="Home">
-                <p id="inst">Instructions</p>
+                <img id="home" src="./../assets/Home icon.png" alt="Home" onclick="playsound()">
+                <p id="inst" onclick="playsound()">Instructions</p>
             </div>
         </nav>
 
         <section class="main">
             <div class="content">
-                <p class="heading">Enter Players' Details</p>
+                <p class="heading"><b>Enter Players' Details</b></p>
                 <div class="pd">
-                    <input type="text" id="p1name" name="p1name" placeholder="Player1's name">
-                    <input type="text" id="p1nick" name="p1nick" placeholder="Nick name">
+                    <input type="text" id="p1name" name="p1name" placeholder="Player1's name" onclick="playsound()">
+                    <input type="text" id="p1nick" name="p1nick" placeholder="Nick name" onclick="playsound()">
                 </div>
                 <div class="pd">
-                    <input type="text" id="p2name" name="p2name" placeholder="Player2's name">
-                    <input type="text" id="p2nick" name="p2nick" placeholder="Nick name" onchange="getvalues()">
+                    <input type="text" id="p2name" name="p2name" placeholder="Player2's name" onclick="playsound()">
+                    <input type="text" id="p2nick" name="p2nick" placeholder="Nick name" onchange="getvalues()" onclick="playsound()">
                 </div>
                 <div class="ctime">
                     <select name="time" id="time" onchange="gettime()">
