@@ -154,7 +154,6 @@ document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
 
-        // To delete the opposite element
         if (item.style.backgroundColor == darkb && item.innerText.length == 0) {
             tog = tog + 1
             moves += 1
@@ -165,6 +164,7 @@ document.querySelectorAll('.box').forEach(item => {
             moves += 1
             movesound()
         }
+        // To delete the opposite element
         else if (item.style.backgroundColor == lightr && item.innerText.length !== 0) {
 
             killsound()

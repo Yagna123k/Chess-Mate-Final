@@ -1,7 +1,7 @@
 var home = document.getElementById('home')
 var inst = document.getElementById('inst')
 
-
+// click effets
 home.addEventListener('click', ()=>{
     window.location.href = './../HomePage/Home.html'
 })
@@ -16,6 +16,7 @@ next.addEventListener('click', ()=>{
     window.location.href = './../GamePage/Game.html'
 })
 
+// Geting values form localStorage
 function getvalues(){
     var p1name = document.getElementById('p1name').value
     var p1nick = document.getElementById('p1nick').value

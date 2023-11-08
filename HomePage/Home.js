@@ -1,3 +1,5 @@
+// Audio Part
+
 let bgm = new Audio('./../assets/backgroundmusic.mp3')
 
 bgm.play()

@@ -7,17 +7,19 @@
         <link rel="stylesheet" href="Preference.css">
         <link rel="shortcut icon" href="./../assets/favlogo.png" type="image/x-icon">
     </head>
-    <body onclick="playsound()">
+    <body>
+        <!-- Nav Bar -->
         <nav>
             <div class="left">
                 <img id="home" src="./../assets/Home icon.png" alt="Home" onclick="playsound()">
                 <p id="inst" onclick="playsound()">Instructions</p>
             </div>
         </nav>
-
+        <!-- Main Content -->
         <section class="main">
             <div class="content">
                 <p class="heading"><b>Enter Players' Details</b></p>
+                <!-- Taking Inputs -->
                 <div class="pd">
                     <input type="text" id="p1name" name="p1name" placeholder="Player1's name" onclick="playsound()">
                     <input type="text" id="p1nick" name="p1nick" placeholder="Nick name" onclick="playsound()">
@@ -26,6 +28,7 @@
                     <input type="text" id="p2name" name="p2name" placeholder="Player2's name" onclick="playsound()">
                     <input type="text" id="p2nick" name="p2nick" placeholder="Nick name" onchange="getvalues()" onclick="playsound()">
                 </div>
+                <!-- Select Time -->
                 <div class="ctime">
                     <select name="time" id="time" onchange="gettime()">
                         <option value="30" selected>30 min</option>
@@ -33,6 +36,7 @@
                         <option value="10">10 min</option>
                     </select>
                 </div>
+                <!-- PLay Button -->
                 <button class="next" id="next">Start</button>
             </div>
             <div class="image">

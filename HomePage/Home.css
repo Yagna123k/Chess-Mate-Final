@@ -1,3 +1,5 @@
+/* Importing a font from our Laptop */
+
 @font-face {
     font-family: Titlefont;
     src: url(Afogand.ttf);
@@ -23,6 +25,8 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
+/* Home Page */
+
 .Home{
     width: 100vw;
     height: 100vh;
@@ -31,6 +35,8 @@ body{
 .flex{
     display: flex;
 }
+
+/* Nav Bar */
 
 nav{
     width: 100%;
@@ -65,6 +71,8 @@ nav{
 #navpart .creater a:hover{
     transform: scale(1.05);
 }
+
+/* creater Animation */
 .creater{
     position: relative;
     width: 120px;
@@ -94,6 +102,7 @@ nav{
     background: linear-gradient(to right,#8F71F3, #896EF1);;
     border-radius: 5px;
 }
+/* Animation */
 @keyframes glow {
     0%{
         transform: rotate(0deg);
@@ -120,7 +129,7 @@ nav{
     font-size: 16px;
     cursor: pointer;
 }
-
+/* text content */
 .textcontent{
     height: 70%;
     max-width: 44%;
@@ -150,7 +159,7 @@ nav{
     line-height: 135%;
     padding-left: 25px;
 }
-
+/* Play Button */
 .playbtn{
     width: 100px;
     height: 50px;
@@ -163,7 +172,7 @@ nav{
     border: none;
     cursor: pointer;
 }
-
+/* Next Level Animation */
 
 .nextlevel{
     position: relative;
@@ -212,6 +221,7 @@ nav{
     transition: 0.2s;
 }
 
+/* Responsive Done */
 
 @media screen and (max-width: 1200px){
 
