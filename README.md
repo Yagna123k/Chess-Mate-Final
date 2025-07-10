@@ -1,36 +1,86 @@
-# Chess-Mate-Final
-Chess Mate: Taking the Game to the Next Level
+# ♟️ Chess Mate: Taking the Game to the Next Level
 
-Welcome to Chess Mate, the online chess platform that will take your chess experience to the next level. Get ready to dive into our captivating  world of strategy, skill, and excitement.
+Welcome to **Chess Mate**, an online chess platform that elevates your chess experience with strategy, skill, and excitement.
 
-# play Now 👇
-https://yagna123k.github.io/Chess-Mate-Final/HomePage/Home.html
+👉 **[Play Now](https://yagna123k.github.io/Chess-Mate-Final/HomePage/Home.html)**
 
-# Game Idea
+---
 
-Chess Mate is an innovative chess platform.
+## 🎯 Game Idea
 
-Focus on enhancing the traditional chess experience.
+* **Chess Mate** is an innovative web-based chess game focused on enhancing the traditional chess experience.
+* Features a **standard 8x8 chessboard** built with HTML, CSS, and JavaScript grid layout.
+* Designed with a **user-friendly interface** for seamless navigation and gameplay.
 
-Feature a standard 8x8 chessboard using grid.
+---
 
-User-Friendly interface for ease of navigation and play.
+## ⚔️ Gameplay
 
+* A classic **two-player strategy game**.
+* Each player controls **16 pieces**:
 
-# Game Play
+  * 1 King, 1 Queen, 2 Rooks, 2 Knights, 2 Bishops, and 8 Pawns.
+* The objective is to **checkmate the opponent’s King** and win the game.
 
-Chess Mate is a two-player strategy game
-Each player has an army of 16 pieces, including  a king, queen, rooks, knights, bishops, and pawns.
-The goal is to kill the opponent’s king and win the game
+---
 
-# Instructions
+## 📝 Instructions
 
-Pawns move forward one square but capture diagonally.
-Rooks move horizontally or vertically.
-Knights move in an L-shape: Two square in one direction and one square in a perpendicular  direction.
-Bishops move diagonally.
-Queens combine the abilities of rooks and bishops.
-Kings movie one square in any direction.
+| Piece      | Movement                                     |
+| ---------- | -------------------------------------------- |
+| **Pawn**   | Moves forward 1 square, captures diagonally. |
+| **Rook**   | Moves horizontally or vertically.            |
+| **Knight** | Moves in an L-shape (2 + 1 squares).         |
+| **Bishop** | Moves diagonally.                            |
+| **Queen**  | Combines Rook and Bishop moves.              |
+| **King**   | Moves 1 square in any direction.             |
 
+---
 
-# Screens - Home, Instructoins, Preference, Gamepage, Winner overlay
+## 🖥️ Screens
+
+* **Home Page** – Welcome screen with game start options.
+* **Instructions Page** – Overview of game rules and piece movements.
+* **Preference Page** – Customize player preferences.
+* **Game Page** – The main chessboard interface.
+* **Winner Overlay** – Highlights the winning player.
+
+---
+
+## 🚀 Tech Stack
+
+* **HTML** – Structure of the game.
+* **CSS** – Styling and layout.
+* **Vanilla JavaScript** – Game logic and interactivity.
+
+---
+
+## 📌 How to Run Locally
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/Yagna123k/Chess-Mate-Final.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd Chess-Mate-Final
+   ```
+3. Open `HomePage/Home.html` in your browser.
+
+---
+
+## ✨ Live Demo
+
+[👉 Play Chess Mate Online](https://yagna123k.github.io/Chess-Mate-Final/HomePage/Home.html)
+
+---
+
+## 📧 Contact
+
+If you have suggestions or find any issues, feel free to open an [issue](https://github.com/Yagna123k/Chess-Mate-Final/issues) or connect with me on [GitHub](https://github.com/Yagna123k).
+
+---
+
+✅ **Have fun and enjoy your game of Chess!**
